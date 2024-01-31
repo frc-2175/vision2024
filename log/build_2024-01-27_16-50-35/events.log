@@ -1,0 +1,83 @@
+[0.000000] (-) TimerEvent: {}
+[0.000781] (vision2024) JobQueued: {'identifier': 'vision2024', 'dependencies': OrderedDict()}
+[0.001389] (vision2024) JobStarted: {'identifier': 'vision2024'}
+[0.099357] (-) TimerEvent: {}
+[0.200154] (-) TimerEvent: {}
+[0.301022] (-) TimerEvent: {}
+[0.401705] (-) TimerEvent: {}
+[0.502533] (-) TimerEvent: {}
+[0.603310] (-) TimerEvent: {}
+[0.703910] (-) TimerEvent: {}
+[0.804565] (-) TimerEvent: {}
+[0.905187] (-) TimerEvent: {}
+[1.005831] (-) TimerEvent: {}
+[1.106762] (-) TimerEvent: {}
+[1.207505] (-) TimerEvent: {}
+[1.308258] (-) TimerEvent: {}
+[1.408891] (-) TimerEvent: {}
+[1.509571] (-) TimerEvent: {}
+[1.610375] (-) TimerEvent: {}
+[1.711882] (-) TimerEvent: {}
+[1.812551] (-) TimerEvent: {}
+[1.913361] (-) TimerEvent: {}
+[2.014040] (-) TimerEvent: {}
+[2.114719] (-) TimerEvent: {}
+[2.215468] (-) TimerEvent: {}
+[2.316105] (-) TimerEvent: {}
+[2.416739] (-) TimerEvent: {}
+[2.517381] (-) TimerEvent: {}
+[2.618092] (-) TimerEvent: {}
+[2.718833] (-) TimerEvent: {}
+[2.741409] (vision2024) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', 'build/vision2024', 'build', '--build-base', '/workspaces/isaac_ros-dev/src/vision2024/build/vision2024/build', 'install', '--record', '/workspaces/isaac_ros-dev/src/vision2024/build/vision2024/install.log', '--single-version-externally-managed'], 'cwd': '/workspaces/isaac_ros-dev/src/vision2024', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'PYTHONWARNINGS': 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources', 'USER': 'nvidia', 'HOSTNAME': 'jetson', 'GIT_ASKPASS': '/home/admin/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra/weston:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/targets/aarch64-linux/lib:/usr/lib/aarch64-linux-gnu/tegra:/opt/nvidia/vpi2/lib64::/usr/lib/aarch64-linux-gnu-host:/opt/tritonserver/lib', 'BROWSER': '/home/admin/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/helpers/browser.sh', 'HOME': '/home/admin', 'TERM_PROGRAM_VERSION': '1.85.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-27934aef-efb2-497a-87e5-2cc0f7fb5de8.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/admin/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/admin/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/node', 'USER_UID': '1000', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'humble', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-0ffb6c18-557b-44d9-94f9-7fc2240b5e91.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'USERNAME': 'admin', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/admin/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/nvidia/tao:/usr/local/cuda/bin', 'FASTRTPS_DEFAULT_PROFILES_FILE': '/usr/local/share/middleware_profiles/rtps_udp_profile.xml', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-0ffb6c18-557b-44d9-94f9-7fc2240b5e91.sock","/tmp/.X11-unix/X6","/home/admin/.gnupg/S.gpg-agent"]', 'DISPLAY': ':1', 'LD_PRELOAD': '/usr/lib/aarch64-linux-gnu/libgomp.so.1', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-fd610c1d09.sock', 'ROS_ROOT': '/opt/ros/humble', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-0ffb6c18-557b-44d9-94f9-7fc2240b5e91.sock', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'DEBIAN_FRONTEND': 'noninteractive', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X6', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/workspaces/isaac_ros-dev/src/vision2024/build/vision2024', 'PYTHONPATH': '/workspaces/isaac_ros-dev/src/vision2024/build/vision2024/prefix_override:/workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'USER_GID': '1000', 'COLCON': '1'}, 'shell': False}
+[2.819216] (-) TimerEvent: {}
+[2.920289] (-) TimerEvent: {}
+[3.021004] (-) TimerEvent: {}
+[3.121649] (-) TimerEvent: {}
+[3.222281] (-) TimerEvent: {}
+[3.322969] (-) TimerEvent: {}
+[3.423701] (-) TimerEvent: {}
+[3.524427] (-) TimerEvent: {}
+[3.600287] (vision2024) StdoutLine: {'line': b'running egg_info\n'}
+[3.601921] (vision2024) StdoutLine: {'line': b'creating build/vision2024/vision2024.egg-info\n'}
+[3.624618] (-) TimerEvent: {}
+[3.633066] (vision2024) StdoutLine: {'line': b'writing build/vision2024/vision2024.egg-info/PKG-INFO\n'}
+[3.635128] (vision2024) StdoutLine: {'line': b'writing dependency_links to build/vision2024/vision2024.egg-info/dependency_links.txt\n'}
+[3.635677] (vision2024) StdoutLine: {'line': b'writing entry points to build/vision2024/vision2024.egg-info/entry_points.txt\n'}
+[3.635875] (vision2024) StdoutLine: {'line': b'writing requirements to build/vision2024/vision2024.egg-info/requires.txt\n'}
+[3.636046] (vision2024) StdoutLine: {'line': b'writing top-level names to build/vision2024/vision2024.egg-info/top_level.txt\n'}
+[3.638379] (vision2024) StdoutLine: {'line': b"writing manifest file 'build/vision2024/vision2024.egg-info/SOURCES.txt'\n"}
+[3.701631] (vision2024) StdoutLine: {'line': b"reading manifest file 'build/vision2024/vision2024.egg-info/SOURCES.txt'\n"}
+[3.703275] (vision2024) StdoutLine: {'line': b"writing manifest file 'build/vision2024/vision2024.egg-info/SOURCES.txt'\n"}
+[3.703722] (vision2024) StdoutLine: {'line': b'running build\n'}
+[3.704012] (vision2024) StdoutLine: {'line': b'running build_py\n'}
+[3.704245] (vision2024) StdoutLine: {'line': b'creating /workspaces/isaac_ros-dev/src/vision2024/build/vision2024/build\n'}
+[3.704533] (vision2024) StdoutLine: {'line': b'creating /workspaces/isaac_ros-dev/src/vision2024/build/vision2024/build/lib\n'}
+[3.704801] (vision2024) StdoutLine: {'line': b'creating /workspaces/isaac_ros-dev/src/vision2024/build/vision2024/build/lib/vision2024\n'}
+[3.705063] (vision2024) StdoutLine: {'line': b'copying vision2024/__init__.py -> /workspaces/isaac_ros-dev/src/vision2024/build/vision2024/build/lib/vision2024\n'}
+[3.705265] (vision2024) StdoutLine: {'line': b'copying vision2024/subscriber.py -> /workspaces/isaac_ros-dev/src/vision2024/build/vision2024/build/lib/vision2024\n'}
+[3.705824] (vision2024) StdoutLine: {'line': b'running install\n'}
+[3.717186] (vision2024) StdoutLine: {'line': b'running install_lib\n'}
+[3.724846] (-) TimerEvent: {}
+[3.748794] (vision2024) StdoutLine: {'line': b'creating /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/python3.8/site-packages/vision2024\n'}
+[3.749686] (vision2024) StdoutLine: {'line': b'copying /workspaces/isaac_ros-dev/src/vision2024/build/vision2024/build/lib/vision2024/__init__.py -> /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/python3.8/site-packages/vision2024\n'}
+[3.749940] (vision2024) StdoutLine: {'line': b'copying /workspaces/isaac_ros-dev/src/vision2024/build/vision2024/build/lib/vision2024/subscriber.py -> /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/python3.8/site-packages/vision2024\n'}
+[3.751031] (vision2024) StdoutLine: {'line': b'byte-compiling /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/python3.8/site-packages/vision2024/__init__.py to __init__.cpython-38.pyc\n'}
+[3.751931] (vision2024) StdoutLine: {'line': b'byte-compiling /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/python3.8/site-packages/vision2024/subscriber.py to subscriber.cpython-38.pyc\n'}
+[3.752180] (vision2024) StdoutLine: {'line': b'running install_data\n'}
+[3.782930] (vision2024) StdoutLine: {'line': b'creating /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/share/ament_index\n'}
+[3.783749] (vision2024) StdoutLine: {'line': b'creating /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/share/ament_index/resource_index\n'}
+[3.784045] (vision2024) StdoutLine: {'line': b'creating /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/share/ament_index/resource_index/packages\n'}
+[3.784300] (vision2024) StdoutLine: {'line': b'copying resource/vision2024 -> /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/share/ament_index/resource_index/packages\n'}
+[3.784474] (vision2024) StdoutLine: {'line': b'copying package.xml -> /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/share/vision2024\n'}
+[3.784624] (vision2024) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.816669] (vision2024) StdoutLine: {'line': b'Copying build/vision2024/vision2024.egg-info to /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/python3.8/site-packages/vision2024-0.0.0-py3.8.egg-info\n'}
+[3.818896] (vision2024) StdoutLine: {'line': b'running install_scripts\n'}
+[3.824992] (-) TimerEvent: {}
+[3.926114] (-) TimerEvent: {}
+[3.970788] (vision2024) StdoutLine: {'line': b'Installing listener script to /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/vision2024\n'}
+[3.971880] (vision2024) StdoutLine: {'line': b"writing list of installed files to '/workspaces/isaac_ros-dev/src/vision2024/build/vision2024/install.log'\n"}
+[4.026290] (-) TimerEvent: {}
+[4.094193] (vision2024) CommandEnded: {'returncode': 0}
+[4.127068] (-) TimerEvent: {}
+[4.212899] (vision2024) JobEnded: {'identifier': 'vision2024', 'rc': 0}
+[4.215333] (-) EventReactorShutdown: {}

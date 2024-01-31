@@ -1,0 +1,2 @@
+[console_scripts]
+listener = vision2024.subscriber:main
