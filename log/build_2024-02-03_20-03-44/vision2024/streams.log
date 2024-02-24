@@ -1,0 +1,25 @@
+[2.490s] Invoking command in '/workspaces/isaac_ros-dev/src/vision2024': PYTHONPATH=/workspaces/isaac_ros-dev/src/vision2024/build/vision2024/prefix_override:/workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/vision2024 build --build-base /workspaces/isaac_ros-dev/src/vision2024/build/vision2024/build install --record /workspaces/isaac_ros-dev/src/vision2024/build/vision2024/install.log --single-version-externally-managed
+[3.329s] running egg_info
+[3.361s] writing build/vision2024/vision2024.egg-info/PKG-INFO
+[3.361s] writing dependency_links to build/vision2024/vision2024.egg-info/dependency_links.txt
+[3.362s] writing entry points to build/vision2024/vision2024.egg-info/entry_points.txt
+[3.362s] writing requirements to build/vision2024/vision2024.egg-info/requires.txt
+[3.362s] writing top-level names to build/vision2024/vision2024.egg-info/top_level.txt
+[3.423s] reading manifest file 'build/vision2024/vision2024.egg-info/SOURCES.txt'
+[3.425s] writing manifest file 'build/vision2024/vision2024.egg-info/SOURCES.txt'
+[3.425s] running build
+[3.425s] running build_py
+[3.426s] copying vision2024/subscriber.py -> /workspaces/isaac_ros-dev/src/vision2024/build/vision2024/build/lib/vision2024
+[3.427s] running install
+[3.438s] running install_lib
+[3.469s] copying /workspaces/isaac_ros-dev/src/vision2024/build/vision2024/build/lib/vision2024/subscriber.py -> /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/python3.8/site-packages/vision2024
+[3.470s] byte-compiling /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/python3.8/site-packages/vision2024/subscriber.py to subscriber.cpython-38.pyc
+[3.471s] byte-compiling /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/python3.8/site-packages/vision2024/__init__.py to __init__.cpython-38.pyc
+[3.472s] running install_data
+[3.502s] running install_egg_info
+[3.533s] removing '/workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/python3.8/site-packages/vision2024-0.0.0-py3.8.egg-info' (and everything under it)
+[3.533s] Copying build/vision2024/vision2024.egg-info to /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/python3.8/site-packages/vision2024-0.0.0-py3.8.egg-info
+[3.535s] running install_scripts
+[3.683s] Installing listener script to /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/vision2024
+[3.684s] writing list of installed files to '/workspaces/isaac_ros-dev/src/vision2024/build/vision2024/install.log'
+[3.793s] Invoked command in '/workspaces/isaac_ros-dev/src/vision2024' returned '0': PYTHONPATH=/workspaces/isaac_ros-dev/src/vision2024/build/vision2024/prefix_override:/workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/vision2024 build --build-base /workspaces/isaac_ros-dev/src/vision2024/build/vision2024/build install --record /workspaces/isaac_ros-dev/src/vision2024/build/vision2024/install.log --single-version-externally-managed

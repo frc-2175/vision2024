@@ -1,0 +1,23 @@
+running egg_info
+writing build/vision2024/vision2024.egg-info/PKG-INFO
+writing dependency_links to build/vision2024/vision2024.egg-info/dependency_links.txt
+writing entry points to build/vision2024/vision2024.egg-info/entry_points.txt
+writing requirements to build/vision2024/vision2024.egg-info/requires.txt
+writing top-level names to build/vision2024/vision2024.egg-info/top_level.txt
+reading manifest file 'build/vision2024/vision2024.egg-info/SOURCES.txt'
+writing manifest file 'build/vision2024/vision2024.egg-info/SOURCES.txt'
+running build
+running build_py
+copying vision2024/subscriber.py -> /workspaces/isaac_ros-dev/src/vision2024/build/vision2024/build/lib/vision2024
+running install
+running install_lib
+copying /workspaces/isaac_ros-dev/src/vision2024/build/vision2024/build/lib/vision2024/subscriber.py -> /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/python3.8/site-packages/vision2024
+byte-compiling /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/python3.8/site-packages/vision2024/subscriber.py to subscriber.cpython-38.pyc
+byte-compiling /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/python3.8/site-packages/vision2024/__init__.py to __init__.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/python3.8/site-packages/vision2024-0.0.0-py3.8.egg-info' (and everything under it)
+Copying build/vision2024/vision2024.egg-info to /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/python3.8/site-packages/vision2024-0.0.0-py3.8.egg-info
+running install_scripts
+Installing listener script to /workspaces/isaac_ros-dev/src/vision2024/install/vision2024/lib/vision2024
+writing list of installed files to '/workspaces/isaac_ros-dev/src/vision2024/build/vision2024/install.log'

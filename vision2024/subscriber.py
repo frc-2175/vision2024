@@ -1,15 +1,40 @@
-import socket
-import struct
+import dataclasses
+import ntcore
+from wpimath.geometry import Pose3d, Translation3d, Rotation3d, Quaternion, Pose2d, Transform2d, Transform3d
 
 import rclpy
 from rclpy.node import Node
 
 from geometry_msgs.msg import Pose
-from isaac_ros_apriltag_interfaces.msg import AprilTagDetectionArray
+from isaac_ros_apriltag_interfaces.msg import AprilTagDetectionArray, AprilTagDetection
+
+import robotpy_apriltag
+import wpiutil
+import wpiutil.wpistruct
+
+@wpiutil.wpistruct.make_wpistruct(name="tagdetection")
+@dataclasses.dataclass
+class TagDetection:
+    id: int
+    transform: Transform3d
+
+    def __init__(self, id: int, transform: Transform3d) -> None:
+        self.id = id
+        self.transform = transform
+
+inst: ntcore.NetworkTableInstance = ntcore.NetworkTableInstance.getDefault()    
+inst.startClient4("jetson")
+inst.setServerTeam(2175)
+inst.startDSClient()
+inst.setServer("192.168.55.100", ntcore.NetworkTableInstance.kDefaultPort4)
+
+table = inst.getTable("jetson")
+
+testPoseTopic = table.getStructArrayTopic("detections", TagDetection)
 
 class MinimalSubscriber(Node):
-
-    def __init__(self):
+    def __init__(self, ):
+        self.testPub = testPoseTopic.publish()
         super().__init__('minimal_subscriber')
         self.subscription = self.create_subscription(
             AprilTagDetectionArray,
@@ -18,21 +43,23 @@ class MinimalSubscriber(Node):
             10)
         self.subscription  # prevent unused variable warning
 
+
     def listener_callback(self, msg: AprilTagDetectionArray):
-        tags = []
+        self.testPub.setDefault([])
+        poses: list[TagDetection] = []
+        detection: AprilTagDetection
         for detection in msg.detections:
             pose: Pose = detection.pose.pose.pose
-            tags.append((detection.id, pose))
 
-        send_tcp(tags)
+            # wpilibPose = Transform3d(pose.position.z, -pose.position.x, pose.position.y, Rotation3d(Quaternion(pose.orientation.w, pose.orientation.x, pose.orientation.y, pose.orientation.z)))
+            wpilibPose = Transform3d(pose.position.x, pose.position.y, pose.position.z, Rotation3d(Quaternion(pose.orientation.w, pose.orientation.x, pose.orientation.y, pose.orientation.z)))
 
-def send_tcp(tags: "list[tuple[int, Pose]]"):
-    msg = struct.pack("!hi", 0x2175, len(tags))
-    for id, pose in tags:
-        tagStruct = struct.pack("!iddddddd", id, pose.position.x, pose.position.y, pose.position.z, pose.orientation.x, pose.orientation.y, pose.orientation.z, pose.orientation.w)
-        msg = msg + tagStruct
+            print(wpilibPose)
+            poses.append(TagDetection(detection.id, wpilibPose))
+            
+        self.testPub.set(poses)
 
-    print(msg.hex())
+
 
 
 def main(args=None):
@@ -41,11 +68,9 @@ def main(args=None):
     minimal_subscriber = MinimalSubscriber()
 
     rclpy.spin(minimal_subscriber)
-
-    # Destroy the node explicitly
-    # (optional - otherwise it will be done automatically
-    # when the garbage collector destroys the node object)
-    minimal_subscriber.destroy_node()
+    
+    print("darn")
+	
     rclpy.shutdown()
 
 
